@@ -46,7 +46,6 @@ type onlineData struct {
 
 type config struct {
 	UtopiaCfg                utopiago.UtopiaClient `json:"utopia"`
-	BotPublicKey             string                `json:"botPubkey"`
 	WelcomeMessages          []string              `json:"welcomeMessages"`
 	InvalidMessage           string                `json:"invalidMessage"`
 	ModeratorPubkeys         []string              `json:"moderatorPubkeys"`
