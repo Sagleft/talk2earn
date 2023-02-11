@@ -1,0 +1,74 @@
+{
+    "utopia": {
+        "protocol": "http",
+        "token": "",
+        "host": "127.0.0.1",
+        "port": 22457,
+        "wsport": 25000,
+        "timeout": 10
+    },
+    "botPubkey": "",
+    "welcomeMessages": ["Привет!"],
+    "invalidMessage": "Не могу разобрать сообщение. Команды: \n\nбаланс\nменеджер",
+    "moderatorPubkeys": [""],
+    "moderatorTelegram": "",
+    "moderatorTelegramIDs": [],
+    "db": {
+        "user": "root",
+        "pass": "",
+        "host": "127.0.0.1",
+        "dbname": "talk2earn",
+        "port": "3306",
+        "table": ""
+    },
+    "points_notify_disabled": false,
+    "min_withdraw": 150,
+    "points_per_24h": 120,
+    "use_intervals": false,
+    "intervals": [
+        {
+            "from": 0,
+            "to": 60,
+            "value": 5
+        },
+        {
+            "from": 61,
+            "to": 100,
+            "value": 3
+        },
+        {
+            "from": 101,
+            "to": 200,
+            "value": 2
+        },
+        {
+            "from": 201,
+            "to": 99999,
+            "value": 1
+        }
+    ],
+    "per_minute_cron": 5,
+    "channel": "",
+    "requests_moderator_pubkey": "",
+    "dialogflow_enabled": false,
+    "dialogflow_langcode": "ru-RU",
+    "dialogflow_project_id": "",
+    "sync_user_responses": true,
+    "telegramBotToken": "",
+    "telegramModeratorsChat": 0,
+    "reboots_by_user_disabled": true,
+    "auto_reboot_disabled": false,
+    "healthcheck_strict_mode": false,
+    "user_message_rate_timeout_ms": 300,
+    "tg_notify_chatid": 0,
+    "tips":[
+        "Utopia не занимается майнингом на вашем оборудовании, если вы не включили майнинг сами",
+		"баллы начисляются по промо-акции, а не за майнинг, мы никак не зарабатываем на вашем ПК",
+		"если нагрузка на компьютер слишком высокая, можно включить в Utopia режим экономии трафика",
+		"баллы начисляются только если вы подписаны на канал",
+		"баллы вывести только на PC-аккаунт",
+		"баллы поступают на аккаунт обычно в течении 2-3 минут после вывода, максимальное ожидание 30 минут"
+    ],
+    "coins_withdraw_label": "баллов",
+    "game_voucher_prefix": "UT-V"
+}
