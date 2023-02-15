@@ -183,6 +183,8 @@ func (app *solution) activateGameVoucher(userPubkey, voucherCode string) (float6
 }
 
 func (app *solution) getUserBalance(userData *userData) string {
+	return ""
+
 	replyMessage := "Текущий баланс: " + formatFloat(userData.Balance) + " баллов.\n" +
 		"Минимальный вывод: " + formatFloat(app.Config.MinWithdraw) + "."
 

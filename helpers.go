@@ -41,7 +41,7 @@ func (app *solution) parseConfig() error {
 	if err != nil {
 		return err
 	}
-	err = json.Unmarshal(jsonBytes, &app.Config)
+	err = json.Unmarshal(jsonBytes, app.Config)
 	if err != nil {
 		return err
 	}
@@ -50,7 +50,7 @@ func (app *solution) parseConfig() error {
 		Client: &app.Config.UtopiaCfg,
 		RateLimiter: rate.New(
 			limitMaxUserResponsesPerSecond,
-			time.Duration(app.Config.UserMessageRateTimeoutMs)*time.Millisecond,
+			time.Duration(app.Config.UserMessageRateTimeoutMs)*time.Hour,
 		),
 	}
 
